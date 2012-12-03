@@ -1,0 +1,193 @@
+{% load article_tags %}
+{% load disqus_tags %}
+{% disqus_dev %}
+<!doctype html>  
+<head>
+<meta charset="UTF-8">
+<title>test test test </title>
+<link rel="icon" href="{{ STATIC_URL }}static/img/favicon.gif" type="image/x-icon"/>
+ <!--[if lt IE 9]>
+ <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+
+<link rel="shortcut icon" href="{{ STATIC_URL }}static/img/favicon.gif" type="image/x-icon"/> 
+<link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}static/css/styles.css"/>
+<link type="text/css" href="{{ STATIC_URL }}static/css/css3.css" rel="stylesheet" />
+  <link href="//fonts.googleapis.com/css?family=Open+Sans:300,400,400italic,600,800|Source+Code+Pro" rel="stylesheet"/>
+<script type="text/javascript" src=" https://ajax.googleapis.com/ajax/libs/jquery/1.6/jquery.js"></script>
+<script type="text/javascript" src="{{ STATIC_URL }}static/js/jquery.pikachoose.js"></script>
+
+
+<script language="javascript">
+			$(document).ready(
+				function (){
+					$("#pikame").PikaChoose();
+				});
+		</script>
+		
+{% block extra-head %}{% endblock %}
+
+    </head>
+    <body>
+	
+    <!--start container-->
+    <div id="container">
+
+    <!--start header-->
+
+    <header>
+ 
+    <!--start logo-->
+    <a href="#" id="logo"><img src="{{ STATIC_URL }}static/img/logo.png" width="221" height="100" alt="logo"/></a>    
+
+	<!--end logo-->
+	
+   <!--start menu-->
+
+	<nav>
+    <ul>
+    <li><a href="{% url portal.views.home %}" class="current">Home</a>
+
+	</li>
+    <li><a href="#">About us</a></li>
+	<li><a href="#">Services</a></li>
+	<li><a href="#">Portfolio</a></li>
+    <li><a href="#">News</a></li>
+    <li><a href="#">Contact</a></li>
+
+    </ul>
+    </nav>
+	<!--end menu-->
+	
+
+    <!--end header-->
+	</header>
+
+
+   <!--start intro-->
+
+   <div id="intro">
+   
+   <div class="group_bannner_right">
+   <img src="{{ STATIC_URL }}static/img/acehunix.jpg" width="550" height="316"  alt="baner">
+   </div>
+   
+   <header class="group_bannner_left">
+   <hgroup>
+   <h1>Simple.Think. </h1>
+   <h2>“The little things are infinitely the most important.“ 
+   </h2>
+   </hgroup>
+   </header>
+   </div>
+   <!--end intro-->
+
+   
+   
+   <!--start holder-->
+
+   <div class="holder_content">
+{% block content %}{% endblock %}
+{% block sidebar %}
+    {% block recent_articles %}
+    <li>
+        <h2>News</h2>
+        {% get_articles 10 as recent %}
+        {% for article in recent %}
+        {% if forloop.first %}<ul>{% endif %}
+            <li><a href="{{ article.get_absolute_url }}" title="Read this article">{{ article.title }}</a></li>
+        {% if forloop.last %}</ul>{% endif %}
+        {% endfor %}
+    </li>
+    {% endblock %}
+
+    {% block article_tags %}
+    <li>
+        <h2>Tag Cloud</h2>
+        {% tag_cloud %}
+    </li>
+    {% endblock %}
+{% endblock %}
+ <div id="disqus_thread"></div>
+        <script type="text/javascript">
+            /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+            var disqus_shortname = 'opensources'; // required: replace example with your forum shortname
+
+            /* * * DON'T EDIT BELOW THIS LINE * * */
+            (function() {
+                var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+                dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+                (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+            })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+        <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+        
+
+     </div>
+   <!--end holder-->
+   
+   <!--start holder-->
+
+   <div class="holder_content1">
+    <section class="group4">
+   <h3>Gallery</h3>
+   	<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec molestie. Sed aliquam sem ut arcu. Phasellus sollicitudin. 
+	Vestibulum condimentum  facilisis nulla. In hac habitasse platea dictumst. Nulla nonummy. Cras quis libero.</p>
+    <div class="pikachoose">
+	<ul id="pikame" >
+		<li><a href="#"><img src="{{ STATIC_URL }}static/img/picture3.jpg" width="500" height="250"  alt="picture"/></a><span>“Simplicity is the nature of great souls.”</span></li>
+		<li><a href="#"><img src="{{ STATIC_URL }}static/img/picture2.jpg" width="500" height="250" alt="picture"/></a><span>“The little things are infinitely the most important. “ </span></li>
+		<li><a href="#"><img src="{{ STATIC_URL }}static/img/picture1.jpg" width="500" height="250" alt="picture"/></a><span>“Simplicity is the essence of happiness.”</span></li>
+	   </ul>
+       </div>
+
+	</section>
+
+
+       
+   <section class="group5">
+   <h3>Testimonials</h3>
+   	<p><span class="purple">1)</span>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec molestie. Sed aliquam sem ut arcu. Phasellus sollicitudin. 
+	Vestibulum condimentum  facilisis nulla. In hac habitasse platea dictumst. Nulla nonummy. Cras quis libero.</p>
+      	<p><span class="purple">2)</span>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec molestie. Sed aliquam sem ut arcu. Phasellus sollicitudin. 
+	Vestibulum condimentum  facilisis nulla. In hac habitasse platea dictumst. Nulla nonummy. Cras quis libero.</p>
+   	<p><span class="purple">3)</span>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec molestie. Sed aliquam sem ut arcu. Phasellus sollicitudin. 
+	Vestibulum condimentum  facilisis nulla. In hac habitasse platea dictumst. Nulla nonummy. Cras quis libero.</p>
+
+
+	</section>
+
+   
+    </div>
+    <!--end holder-->
+
+   
+   
+    </div>
+   <!--end container-->
+   
+   <!--start footer-->
+   <footer>
+   <div class="container">  
+   <div id="FooterTwo"> © 2011 Think simple </div>
+   <div id="FooterTree"> Valid html5, design and code by <a href="http://www.marijazaric.com">marija zaric - creative simplicity</a>   </div> 
+   </div>
+   </footer>
+   <!--end footer-->
+<!-- Free template distributed by http://freehtml5templates.com -->   
+  </script>
+    <script type="text/javascript">
+        /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+        var disqus_shortname = 'opensources'; // required: replace example with your forum shortname
+
+        /* * * DON'T EDIT BELOW THIS LINE * * */
+        (function () {
+            var s = document.createElement('script'); s.async = true;
+            s.type = 'text/javascript';
+            s.src = 'http://' + disqus_shortname + '.disqus.com/count.js';
+            (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+        }());
+        </script> 
+   </body>
+   </html>

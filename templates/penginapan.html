@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="container">
+	        <div class="hero-unit">
+	         <h2> Tempat Penginapan   </h2>
+	           <hr>
+	           {% for penginapan in penginapan %}
+	           <h3>	{{ penginapan.id }}. {{ penginapan.tempat }}</h3>
+	           	<div class="row">
+	           		{{ penginapan.keterangan|safe }}
+	           	</div>
+	           	{% endfor %}
+	            
+	        </div>
+{% endblock %}

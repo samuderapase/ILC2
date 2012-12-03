@@ -1,0 +1,11 @@
+User-agent: Mediapartners-Google*
+Disallow:
+User-agent: *
+Disallow: /*.json$
+Disallow: /*.js$
+Disallow: /*.inc$
+Disallow: /*.css$
+Disallow: /*?*
+Disallow: /*?
+Sitemap: http://www.gstatic.com/s2/sitemaps/profiles-sitemap.xml
+Sitemap: http://www.google.com/hostednews/sitemap_index.xml

@@ -1,0 +1,878 @@
+/*
+#------------------------------------------------------------------------
+# Fest - September Joomla! template (for Joomla 2.5)
+#
+# Copyright (C) 2007-2012 Gavick.com. All Rights Reserved.
+# License:  Copyrighted Commercial Software
+# Website:  http://www.gavick.com
+# Support:  support@gavick.com
+*/
+
+/* basic elements */
+b,
+strong {
+	font-weight: 600;
+}
+.k2box > ul,
+.k2box > ul ul {
+	list-style-type: disc;
+	padding-left: 20px;
+}
+.k2box > ol,
+.k2box > ol ol {
+	list-style-type: decimal;
+	padding-left: 20px;
+}
+.k2box > ul li,
+.k2box > ul ul li,
+.k2box > ol li,
+.k2box > ol ol li {
+	list-style-position: outside;
+	padding-left: 0;
+}
+/* headings */
+
+p.gkHeadline {
+	margin: 5px 0 0 !important;
+	text-align: center;
+	font: normal 2em/1.9 "Lucida Grande", Tahoma;
+	color: #222;
+}
+p.gkSubHeadline {
+	margin: 0 0 24px !important;
+	letter-spacing: 0.3em;
+	text-align: center;
+	text-transform: uppercase;
+	font: lighter 0.75em/1em "Lucida Grande", Tahoma;
+	color: #666;
+}
+p.gkSmallHeadline {
+	margin: 1em 0 !important;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	font-size: 10px;
+	font-weight: bold;
+	color: #bbb;
+}
+p.gkLargeHeadline {
+	margin: 0 !important;
+	padding: 0px 0px 6px 0px;
+	letter-spacing: -2px;
+	font: normal 44px/38px Arial, Helvetica, sans-serif;
+	color: #444;
+}
+/*icons*/
+
+.gkfile1,
+.gkfile2,
+.gklink,
+.gkinfo,
+.gkpin,
+.gksettings,
+.gkmic,
+.gkbook,
+.gkmap,
+.gktag,
+.gkstats,
+.gkvoice,
+.gkvideo,
+.gklocked,
+.gkunlocked,
+.gklocation,
+.gkcomment,
+.gkalarm {
+	min-height: 38px !important;
+	padding: 0 0 2px 52px !important;
+	background-repeat: no-repeat !important;
+	background-position: 0 8px !important;
+}
+/*blocks*/
+
+p.gkInfo1,
+p.gkTips1,
+p.gkWarning1 {
+	background: rgba(255, 255, 255, 0.6);
+	background-repeat: no-repeat;
+	background-position: 24px 24px;
+	color: #2F3336;
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 1.6;
+	min-height: 53px;
+	padding: 18px 10px 20px 120px;
+}
+/*highlight*/
+
+.gkHighlight1,
+.gkHighlight2,
+.gkHighlight3,
+.gkHighlight4 {
+	padding: 1px 5px;
+	text-shadow: none;
+	cursor: default;
+}
+.gkHighlight1:hover {
+	background: #fff;
+}
+.gkHighlight2:hover {
+	background: #212121;
+	color: #fff;
+}
+.gkHighlight3:hover {
+	background: #737373;
+	color: #fff;
+}
+.gkHighlight4:hover {
+	background: #eee;
+	color: #212121;
+}
+/*code */
+
+pre,
+.gkCode1,
+.gkCode2,
+.gkCode3 {
+	margin: 10px 0 15px !important;
+	padding: 10px 15px !important;
+	font: normal 0.92em/18px 'Curier New', monospace !important;
+}
+pre,
+.gkCode1,
+.gkCode2 {
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+	filter: alpha(opacity=100);
+	opacity: 1;
+}
+.gkCode3 {
+	padding-left: 82px !important;
+}
+.gkCode3 h4 {
+	width: 35px;
+	position: relative;
+	top: 0;
+	margin: 0 0 0 -64px !important;
+	padding: 2px 5px 0;
+	font-size: 13px;
+}
+pre:hover,
+.gkCode1:hover {
+	background: #fff;
+}
+div.gkCode2:hover,
+div.gkCode3:hover {
+	color: #000;
+}
+/* lists */
+
+ol {
+	margin: 2em 0;
+	padding: 0;
+	list-style-position: inside;
+}
+ol.gkDec {
+	list-style-type: decimal;
+}
+ol.gkRoman {
+	list-style-type: upper-roman;
+}
+ol.gkAlpha {
+	list-style-type: lower-alpha;
+}
+ol.gkDecimalLeadingZero {
+	list-style-type: decimal-leading-zero;
+}
+/* unordered lists */
+
+ul.gkBullet1,
+ul.gkBullet2,
+ul.gkBullet3,
+ul.gkBullet4,
+ul.gkCircle1,
+ul.gkCircle2,
+ul.gkSquare1,
+ul.gkSquare2,
+ul.gkSquare3 {
+	margin: 2em 0;
+	padding: 0;
+}
+ul li {
+	list-style-position: outside;
+}
+ul.gkBullet1 li,
+ul.gkBullet2 li,
+ul.gkBullet3 li,
+ul.gkBullet4 li,
+ul.gkCircle1 li,
+ul.gkCircle2 li,
+ul.gkSquare1 li,
+ul.gkSquare2 li {
+	margin: 0 !important;
+	padding: 2px 0 2px 28px;
+	line-height: 1.8em !important;
+	list-style: none;
+	overflow: inherit;
+}
+/* Definition lists */
+
+dl.gkDef1 dt,
+dl.gkDef2 dt,
+dl.gkDef3 dt {
+	margin: 10px 0 5px 0;
+}
+dl.gkDef1 dd,
+dl.gkDef2 dd,
+dl.gkDef3 dd {
+	padding: 10px;
+}
+dl.gkDef2 dt {
+	text-decoration: underline;
+}
+dl.gkDef3 dt {
+	margin-top: 10px;
+	letter-spacing: 0.3em;
+	text-transform: uppercase;
+	font: lighter 1.1em/1.2em "Lucida Grande", Tahoma;
+	font-variant: normal;
+	color: #666666;
+}
+/* acronyms and abbrs */
+
+acronym,
+abbr {
+	border-bottom-width: 1px;
+	border-bottom-style: dotted;
+}
+acronym:hover,
+abbr:hover {
+	border-bottom-style: solid;
+	cursor: pointer;
+}
+/* Legends */
+
+div.gkLegend1 h4,
+div.gkLegend2 h4,
+div.gkLegend3 h4,
+div.gkLegend4 h4 {
+	float: left;
+	position: relative;
+	top: -18px;
+	left: 11px;
+	margin: 0 0 -9px !important;
+	padding: 2px 10px;
+	line-height: 18px;
+	font-weight: 600;
+	font-size: 16px;
+	background: #2f3336;
+	color: #fff;
+	text-transform: uppercase
+}
+div.gkLegend1,
+div.gkLegend2,
+div.gkLegend3,
+div.gkLegend4 {
+	margin: 30px 0;
+	padding: 6px;
+}
+div.gkLegend1 p,
+div.gkLegend2 p,
+div.gkLegend3 p,
+div.gkLegend4 p {
+	margin: 7px;
+	clear: both;
+}
+/* Dropcaps */
+
+span.gkDropcap1,
+span.gkDropcap2,
+span.gkDropcap3 {
+	display: block;
+	float: left;
+	line-height: 1.0em;
+	font-size: 5.0em;
+	color: #333;
+}
+span.gkDropcap1 {
+	height: 61px;
+	margin: -4px 5px -3px 0;
+}
+p.gkDropcap2 {
+	padding: 0 0 0 50px;
+}
+span.gkDropcap2 {
+	height: 61px;
+	margin: -4px 0 0 -50px;
+}
+p.gkDropcap2 {
+	padding-left: 50px;
+}
+p.gkDropcap3 {
+	margin-top: 32px;
+}
+span.gkDropcap3 {
+	height: 61px;
+	margin: -32px 5px 0 0;
+}
+/* Blockquotes */
+
+blockquote {
+	margin: 20px 0;
+	font-style: italic;
+}
+blockquote div {
+	display: block;
+}
+blockquote div.gkBlockquote1 div,
+blockquote div.gkBlockquote2 div {
+	padding: 0 24px;
+}
+blockquote div.gkBlockquote3 {
+	padding-bottom: 1px;
+}
+blockquote div.gkBlockquote3 div {
+	padding: 5px 48px 0;
+}
+blockquote div.gkBlockquote4 div {
+	padding: 0 48px;
+}
+/* Floated blocks */
+
+.gkBlockTextLeft,
+.gkBlockTextRight,
+.gkBlockTextCenter {
+	display: block;
+	font-size: 16px;
+	font-style: italic;
+	line-height: 150%;
+	padding: 30px;
+	width: 38%;
+}
+.gkBlockTextLeft {
+	float: left;
+	text-align: left;
+}
+.gkBlockTextRight {
+	float: right;
+	text-align: right;
+}
+.gkBlockTextCenter {
+	margin: 0 auto;
+	text-align: center;
+}
+/* numBlocks*/
+
+p.numblocks {
+	position: relative;
+	min-height: 56px;
+	padding: 0 0 0 65px !important;
+}
+p.numblocks span {
+	position: absolute;
+	left: 0;
+	top: 6px;
+	display: block;
+	line-height: 32px;
+	width: 60px;
+	font-size: 38px;
+	font-weight: 600;
+}
+p.num-1 span {
+	color: #2F3336;
+}
+p.num-2 span {
+	color: #e89e44;
+}
+p.num-3 span {
+	color: #1078b9;
+}
+p.numblocks span.highlight {
+	font-size: 15px;
+	position: static;
+	width: auto;
+	display: inline;
+	border-right: none;
+}
+/* Blocks*/
+
+.gkblock-1,
+.gkblock-2,
+.gkblock-3,
+.gkblock-4,
+.gkblock-5,
+.gkblock-6,
+.gkblock-7,
+.gkblock-8,
+.gkblock-9 {
+	margin: 20px 0;
+	padding: 15px 20px;
+}
+/* Blocks*/
+
+.bubble-1,
+.bubble-2,
+.bubble-3 {
+	position: relative;
+	margin: 20px 0 40px;
+	padding: 15px 20px;
+}
+.bubble-1 cite,
+.bubble-2 cite,
+.bubble-3 cite {
+	height: 25px;
+	position: absolute;
+	bottom: -25px;
+	display: block;
+	left: 26px;
+	font-size: 12px;
+	font-weight: bold;
+	line-height: 32px;
+	padding-left: 32px;
+	background: url("../../images/style1/typography/buble_arrow.png") no-repeat 0 0;
+}
+/*blockquote*/
+
+blockquote div.gkBlockquote1 {
+	background: url("../../images/style1/typography/open1.png") no-repeat left bottom;
+}
+blockquote div.gkBlockquote1 div {
+	background: url("../../images/style1/typography/close1.png") no-repeat right top;
+}
+blockquote div.gkBlockquote2 {
+	background: url("../../images/style1/typography/open1.png") no-repeat left top;
+}
+blockquote div.gkBlockquote2 div {
+	background: url("../../images/style1/typography/close1.png") no-repeat right top;
+}
+blockquote div.gkBlockquote3 {
+	background: url("../../images/style1/typography/open2.png") no-repeat left bottom;
+}
+blockquote div.gkBlockquote3 div {
+	background: url("../../images/style1/typography/close2.png") no-repeat right top;
+}
+blockquote div.gkBlockquote4 {
+	background: url("../../images/style1/typography/open2.png") no-repeat left top;
+}
+blockquote div.gkBlockquote4 div {
+	background: url("../../images/style1/typography/close2.png") no-repeat right top;
+}
+/*tables*/
+
+.gkTable {
+	border-collapse: collapse;
+	font-style: normal;
+}
+.gkTable thead {
+	padding: 5px 10px;
+	text-align: left;
+	font: normal 19px/32px "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+.gkTable td {
+	padding: 10px;
+}
+.gkTable tfoot {
+	margin-bottom: 10px;
+	margin-top: 0px;
+	padding: 0px;
+	text-align: right;
+	font-size: 0.8em;
+	font-style: italic;
+}
+.gkTable2 {
+	border-collapse: collapse;
+	font-style: normal;
+}
+.gkTable2 thead {
+	text-align: left;
+	font: normal 20px/32px "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	padding: 5px 10px;
+}
+.gkTable2 td {
+	padding: 10px;
+}
+.gkTable2 tfoot {
+	margin-bottom: 10px;
+	margin-top: 0px;
+	padding: 0px;
+	text-align: right;
+	font-size: 0.8em;
+	font-style: italic;
+}
+/*tooltips*/
+
+.gkTooltip {
+	position: relative;
+	outline: none;
+	cursor: help;
+	text-decoration: none;
+	color: #000;
+	text-shadow: none;
+}
+.gkTooltip span {
+	position: absolute;
+	margin: 10px 0 0 -9999em;
+	font-size: 11px;
+	line-height: 16px;
+}
+.gkTooltip:hover span {
+	position: absolute;
+	left: 0.5em;
+	top: 1em;
+	z-index: 99;
+	width: 250px;
+	margin-left: 0;
+}
+.gkTooltip:hover em {
+	display: block;
+	padding: 0;
+	font-size: 16px;
+	line-height: 30px;
+	text-decoration: none !important;
+	text-shadow: none;
+	font-style: normal !important;
+}
+.classicTooltip {
+	padding: 0.6em 0.8em;
+	text-shadow: none;
+}
+.customTooltip {
+	padding: 0.6em 0.8em;
+	text-shadow: none;
+}
+/**
+ *
+ * colors
+ *
+ * --------------------------------------------------------------------------------------------------------
+ *
+ *
+ *
+ **/
+
+pre,
+.gkCode1,
+.gkCode2 {
+	padding-left: 32px;
+	border: 1px solid #EAE8CC;
+	border-left: 4px solid #e89e44;
+	background: #FFFEF4;
+	color: #2F3336;
+}
+.gkCode2 {
+	background: rgba(255, 255, 255, 0.65);
+	border: 1px solid #eee;
+	border-left: 4px solid #1078B9;
+}
+.gkCode3 {
+	border: 1px solid #eee;
+	background: rgba(255, 255, 255, 0.65);
+}
+.gkCode3 h4 {
+	background: #1078B9;
+	color: #fff;
+	text-align: center;
+	text-shadow: none;
+}
+/* Warning message */
+
+p.gkInfo1 {
+	background-image: url('../../images/style1/typography/info.png')
+}
+p.gkTips1 {
+	background-image: url('../../images/style1/typography/tips.png')
+}
+p.gkWarning1 {
+	background-image: url('../../images/style1/typography/warning.png')
+}
+/* Legends */
+
+div.gkLegend1 {
+	border: 5px solid #fff;
+}
+div.gkLegend2 {
+	border: 5px solid #1078B9;
+}
+div.gkLegend3 {
+	border: 5px solid #e89e44;
+}
+div.gkLegend4 {
+	border: 5px solid #2f3336;
+}
+div.gkLegend1 h4 {
+	background: #fff;
+	color: #2f3336;
+}
+div.gkLegend2 h4 {
+	background: #1078B9;
+}
+div.gkLegend3 h4 {
+	background: #e89e44;
+}
+div.gkLegend4 h4 {
+	background: #2f3336;
+}
+.gkHighlight1 {
+	background: #ffd;
+}
+.gkHighlight2 {
+	background: #e89e44;
+	color: #fff;
+}
+.gkHighlight3 {
+	background: #212121;
+	color: #fff;
+}
+.gkHighlight4 {
+	background: #1078B9;
+	color: #fff;
+}
+/* Blocks */
+
+.gkblock-1 {
+	border: 2px dashed #e89e44;
+}
+.gkblock-2 {
+	border: 2px dashed #1078B9;
+}
+.gkblock-3 {
+	background: rgba(255, 255, 255, 0.6);
+}
+.gkblock-4 {
+	border: 3px solid #e89e44;
+}
+.gkblock-5 {
+	border: 3px solid #1078B9;
+}
+.gkblock-6 {
+	border: 1px solid #EAE8CC;
+	background: #FFFEF4;
+}
+.gkblock-7 {
+	background: #e89e44;
+	color: #fff !important;
+}
+.gkblock-8 {
+	background: #1078B9;
+	color: #fff !important;
+}
+.gkblock-9 {
+	background: #fff;
+}
+/* Bubbles */
+
+.bubble-1 {
+	border: 5px solid #fff;
+}
+.bubble-2 {
+	border: 5px solid #1078B9;
+}
+.bubble-3 {
+	border: 5px solid #e89e44;
+}
+.bubble-2 cite {
+	background-position: 0 -35px;
+	color: #1078B9;
+}
+.bubble-3 cite {
+	background-position: 0 -70px;
+	color: #e89e44;
+}
+/* list */
+
+ul.gkBullet1 li {
+	background: url("../../images/style1/typography/bullet1.png") no-repeat 0 8px !important;
+}
+ul.gkBullet2 li {
+	background: url("../../images/style1/typography/bullet2.png") no-repeat 0 8px !important;
+}
+ul.gkBullet3 li {
+	background: url("../../images/style1/typography/bullet3.png") no-repeat 0 7px !important;
+}
+ul.gkBullet4 li {
+	background: url("../../images/style1/typography/bullet4.png") no-repeat 0 7px !important;
+}
+ul.gkCircle1 li {
+	background: url("../../images/style1/typography/bullet-circle1.png") no-repeat 0 7px !important;
+}
+ul.gkCircle2 li {
+	background: url("../../images/style1/typography/bullet-circle2.png") no-repeat 0 7px !important;
+}
+ul.gkSquare1 li {
+	background: url("../../images/style1/typography/bullet-square1.png") no-repeat 0 8px !important;
+}
+ul.gkSquare2 li {
+	background: url("../../images/style1/typography/bullet-square2.png") no-repeat 0 8px !important;
+}
+.gkBlockTextLeft,
+.gkBlockTextRight,
+.gkBlockTextCenter {
+	color: #e89e44;
+	text-shadow: 1px 1px 0 #fff;
+	-moz-text-shadow: 1px 1px 0 #fff;
+	-webkit-text-shadow: 1px 1px 0 #fff;
+	-ms-text-shadow: 1px 1px 0 #fff;
+	-o-text-shadow: 1px 1px 0 #fff;
+}
+span.classicTooltip {
+	background-color: #ffffdd;
+	color: #656565;
+}
+span.criticalTooltip {
+	background: #e89e44;
+	color: #fff;
+}
+span.helpTooltip {
+	background: #1078B9;
+	color: #fff;
+}
+span.infoTooltip {
+	background: #FFFEF4;
+	color: #333;
+	border: 1px solid #EAE8CC;
+}
+span.warningTooltip {
+	background: #fff;
+	color: #F93B3B;
+	border: 2px dashed #e89e44;
+}
+/* demo */
+ul#demo-typography {
+	background: transparent;
+	overflow: hidden;
+	padding: 10px 30px 30px 30px;
+}
+ul#demo-typography li {
+	list-style-position: none;
+	list-style-type: disc;
+	line-height: 24px;
+	width: 23.9%;
+	float: left;
+	color: #cb260a;
+	font-size: 11px;
+}
+ul#demo-typography li a {
+	font-size: 11px;
+	text-shadow: 2px 2px 0 #fff;
+}
+.demo-typoDiv {
+	clear: both;
+	overflow: hidden;
+	margin: 0 0 30px;
+}
+h4.demo-typo {
+	font-size: 24px;
+	font-weight: 300;
+	color: #212121;
+	margin: 30px 0;
+	border-bottom: 1px solid #eee;
+}
+.demo-typo-col2 {
+	width: 50%;
+	float: left;
+}
+.demo-typo-col3 {
+	width: 33%;
+	float: left;
+}
+.demo-typo-col4 {
+	width: 25%;
+	float: left;
+}
+.demo-typo_padd {
+	padding: 0 15px;
+}
+#warnings .demo-typo_padd p {
+	margin: 1em 0 1.6em;
+}
+.typoDesc small {
+	font: normal 10px Monaco, Consolas, "Courier News", monospace;
+	color: #999;
+}
+.gkblock-7 small,
+.gkblock-9 small,
+.bubble-4 small,
+.bubble-5 small,
+.bubble-6 small,
+.gkblock-8 small {
+	color: #fff !important;
+}
+.gkblock-9 small {
+	color: #353639 !important;
+}
+/* Schedule */
+
+.gkSchedule {
+	margin: 0 0 20px;
+	overflow: visible;
+}
+.gkSchedule dt {
+	color: #fff;
+	font-size: 42px;
+	font-weight: 600;
+	line-height: 1;
+	margin: 0 0 36px;
+	text-shadow: 1px 1px 0 rgba(0,0,0,0.15)
+}
+.gkSchedule dd + dt {
+	margin-top: 72px;
+}
+.gkSchedule dd {
+	border-top: 1px solid #d5d5d5;
+	margin: 20px 0;
+	padding-top: 20px;
+	overflow: hidden;
+}
+.gkSchedule dd > strong {
+	background: #2F3336;
+	color: #fff;
+	float: left;
+	margin: 0 50px 0 0;
+	position: absolute;
+	text-align: center;
+	font-size: 22px;
+	line-height: 1;
+	padding: 3px;
+}
+.gkSchedule dd > div {
+	margin-left: 150px;
+}
+.gkSchedule dd > div > div {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	box-sizing: border-box;
+	float: left;
+	padding: 12px 20px;
+	background: #fff;
+	margin-left: 32px;
+}
+
+.gkSchedule dd > div > div p {
+	color: #e89e44;
+	font-size: 13px;
+	font-weight: 600;
+	margin: 0 0 6px;
+	text-transform: uppercase;
+}
+.gkSchedule dd > div > div strong {
+	color: #888;
+}
+.gkSchedule dd > div > div a,
+.gkSchedule dd > div > div span {
+	background: #e89e44;
+	clear: both;
+	color: #fff;
+	display: block;
+	font-size: 24px;
+	font-weight: 600;
+	line-height: 24px;
+	padding: 1px 4px;
+	text-transform: uppercase
+}
+.gkSchedule dd > div > div a:hover { background: #1078B9}
+.gkSchedule dd > div > div small {
+	clear: both;
+	color: #454545;
+	display: block;
+	font-size: 15px;
+	font-weight: 600
+}

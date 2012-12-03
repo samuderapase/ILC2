@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+{% block content %}
+	<div class="container">
+	        <div class="hero-unit">
+        <h3>Peserta ILC-2013</h3><hr>	          
+            
+	            <div class="table-hover">
+	              <div class="table">
+                        	            
+	            <table>
+	                <tbody>
+	                    <tr>
+	                        <th>Nama</th>
+	                        <th>Alamat</th>
+	                        <th>Email</th>
+	                    </tr>    
+	                </tbody>
+	                        <tr>
+	                    {% for orang in peserta %}
+	                            <td>{{ orang.nama }}</td>
+	                            <td>{{ orang.alamat }}</td>
+	                            <td>{{ orang.email }}</td>
+	                     {% endfor %}       
+	                        </tr>     
+                        
+                </table>
+	        </div>
+	        </div>
+                
+	</div>
+	    		
+
+{% endblock %}

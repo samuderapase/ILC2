@@ -1,0 +1,194 @@
+/*
+#------------------------------------------------------------------------
+# Fest - September Joomla! template (for Joomla 2.5)
+#
+# Copyright (C) 2007-2012 Gavick.com. All Rights Reserved.
+# License:  Copyrighted Commercial Software
+# Website:  http://www.gavick.com
+# Support:  support@gavick.com
+ */
+ 
+/* Base for all menus */
+#gkMainMenu {
+	clear: both;
+	float: left;
+	margin: 0;
+	padding: 0;
+	width: auto;
+}
+#gkMainMenu .gkMenu {
+	display: block;
+}
+.gkMenu > ul > li {
+	float: left;
+	width: auto;
+}
+.gkMenu > ul > li > a,
+.gkMenu > ul > li > span {
+	text-transform: uppercase;
+}
+.gkMenu > ul > li > a {
+	display: block;
+}
+.gkMenu > ul > li a small {
+	display: block;
+	font-size: 11px;
+	line-height: 13px;
+}
+.gkMenu > ul > li > .childcontent,
+.gkMenu > ul > li > .childcontent .childcontent {
+	position: absolute;
+	left: -999em;
+	z-index: 999;
+}
+.gkMenu > ul > li > .childcontent .gkcol {
+	float: left;
+}
+.gkMenu > ul > li:hover > .childcontent,
+.gkMenu > ul > li:hover > .childcontent li:hover > .childcontent {
+	left: inherit;
+}
+.gkMenu > ul > li:hover > .childcontent .childcontent {
+	margin-left: 120px;
+	margin-top: -45px!important;
+}
+
+/* main menu CSS */
+.gkMenu {
+	position: relative;
+	margin: 0;
+	z-index: 1000;
+}
+.gkMenu > ul {
+	background: transparent;
+	height: 54px;
+	margin: 0;
+	padding: 0;
+}
+.gkMenu > ul > li {
+	height: 54px;
+	font-size: 18px;
+	font-weight: 600;
+	margin: 0;
+}
+.gkMenu > ul > li > a {
+	color: #626262;
+	display: block;
+	height: 54px;
+	line-height: 55px;
+	margin: 0;
+	padding: 0 12px;
+}
+.gkMenu > ul > li:first-child > a{
+	padding-left: 0!important;
+}
+.gkMenu > ul > li:hover > a,
+.gkMenu > ul > li:active > a,
+.gkMenu > ul > li:focus > a,
+.gkMenu > ul > li.active:hover > a,
+.gkMenu > ul > li.active:active > a,
+.gkMenu > ul > li.active:focus > a,
+.gkMenu > ul > li.active > a {
+	color: #fff;
+}
+.gkMenu > ul ul {
+	margin: 0;
+	padding: 0;
+}
+.gkMenu > ul > li > div.childcontent {
+	background: transparent url('../../images/style1/menu_level1.png') no-repeat left top;
+	margin-top: 0;
+	padding: 10px 0 0 0;
+}
+.gkMenu > ul > li > div.childcontent div.childcontent {
+	background: transparent url('../../images/style1/menu_level2.png') no-repeat left top;
+	padding: 0 0 0 10px;
+}
+.gkMenu > ul > li > div.childcontent div.childcontent div.childcontent {
+	background: transparent url('../../images/style1/menu_level3.png') no-repeat left top;
+	padding: 0 0 0 10px;
+}
+.gkMenu > ul div.childcontent-inner {
+	background: #0f78b9;
+	-webkit-border-radius: 3px;
+	   -moz-border-radius: 3px;
+	        border-radius: 3px;
+	overflow: hidden;
+	padding: 0;
+	text-align: left;
+}
+.gkMenu > ul div.childcontent-inner > div > ul {
+	padding: 18px 0;
+}
+.gkMenu > ul div.childcontent-inner div.childcontent-inner {
+	background: #1a88cd;
+}
+.gkMenu > ul div.childcontent-inner div.childcontent-inner div.childcontent-inner {
+	background: #2b9ce3;
+}
+
+.gkMenu > ul div.childcontent-inner div.childcontent-inner div.childcontent-inner {
+	margin-top: 0!important;
+}
+.gkMenu > ul > li > .childcontent .gkcol {
+	padding-bottom: 0;
+}
+.gkMenu > ul div.childcontent li {
+	margin: 0 30px;
+}
+.gkMenu > ul div.childcontent a {
+	font-size: 16px;
+	color: #fff;
+	display: block;
+	min-height: 30px;
+	font-weight: 600;
+	padding: 3px 0;
+}
+.gkMenu > ul div.childcontent small {
+	color: #fff;
+	color: rgba(255, 255, 255, 0.75);
+	font-size: 11px;
+	font-weight: 300;
+	margin: 0 0 6px;
+}
+.gkMenu > ul div.childcontent li.group {
+	padding: 0;
+	margin: 0;
+	height: auto;
+	border: none !important;
+	background: none;
+}
+.gkMenu > ul div.childcontent li.active > a,
+.gkMenu > ul div.childcontent li:hover > a,
+.gkMenu > ul div.childcontent li > a:hover {
+	color: #fff;
+	color: rgba(255, 255, 255, 0.75);
+}
+.gkMenu > ul div.childcontent header {
+	padding: 0 30px 6px 30px;
+	display: block;
+	color: #fff;
+	margin: 0;
+	font-weight: 400!important;
+}
+.gkMenu > ul div.childcontent header a {
+	color: #fff;
+	font-size: 16px;
+	line-height: 24px;
+	padding: 8px 0 4px;
+	text-transform: uppercase;
+	border-bottom: 2px solid #1a88cd;
+}
+.gkMenu > ul div.childcontent header small {
+	display: block;
+	text-transform: none;
+}
+#gkMainMenu .module p {
+	font-size: 12px;
+	line-height: 18px;
+}
+
+/* hide mobile menu */
+#gkMobileMenu {
+	display: none;
+}

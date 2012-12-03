@@ -1,0 +1,319 @@
+/*
+#------------------------------------------------------------------------
+# Fest - September Joomla! template (for Joomla 2.5)
+#
+# Copyright (C) 2007-2012 Gavick.com. All Rights Reserved.
+# License:  Copyrighted Commercial Software
+# Website:  http://www.gavick.com
+# Support:  support@gavick.com
+ */
+ 
+/* Style 1 */
+
+/* template.css */
+a {
+	color: #1078b9;
+}
+#gkPage.gkSpeakersExist {
+	border-top-color: #e89e44;
+}
+#gkLogo.cssLogo {
+	background-image: url('../images/style1/logo.png');
+}
+#gkRegister a:hover {
+	background: #e89e44;
+}
+#gkBottom1 a:active,
+#gkBottom1 a:focus,
+#gkBottom1 a:hover {
+	color: #1078b9;
+}
+#gkHeaderBottom {
+	background: #e87b2d;
+}
+#gkColor1 {
+	background: #e87b2d;
+}
+#gkColor2 {
+	background: #7d76a1;
+}
+#gkColor3 {
+	background: #9a9180;
+}
+.box.color > div {
+	background: #e89e44!important;
+	color: #faebd8;
+}
+.box.color ul li {
+	border-top: 1px solid #fabf66;
+}
+.box.color a:active,
+.box.color a:focus,
+.box.color a:hover {
+	color: #faebd8;
+}
+span#fb-auth small {
+	border-right: 1px solid #a0aecd;
+}
+span#fb-auth {
+	background-color: #1078B9;
+}
+span#fb-auth:hover {
+	background-color: #e89e44;
+}
+span#fb-auth:hover small { 
+	border-color: #f5b76d;
+}
+
+/* joomla.css */
+button,
+.button,
+input.button,
+span.button,
+button.button,
+div.button,
+input[type="submit"],
+input[type="button"],
+.pagenav-prev a,
+.pagenav-next a {
+	background: #1078b9;
+}
+button:hover,
+.button:hover,
+input.button:hover,
+span.button:hover,
+button.button:hover,
+div.button:hover,
+input[type="submit"]:hover,
+input[type="button"]:hover,
+.pagenav-prev a:hover,
+.pagenav-next a:hover {
+	background: #e89e44;
+}
+article > time {
+	background: #1078b9;
+}
+article header h1 a:hover,
+article header h2 a:hover {
+	color: #1078b9;
+}
+article header li a:hover {
+	color: #1078b9;
+}
+.tip-title {
+	background: #1078b9;
+}
+#system-message dd.error {
+	background: #e89e44;
+}
+#system-message dd.notice {
+	background: #1078b9;
+}
+.pagination ul li a:hover {
+	border-color: #e89e44;
+	color: #e89e44
+}
+#article-index li a:hover {
+	color: #1078b9;
+}
+dl#tabs dt.tabs.open a,
+dl.tabs dt.tabs.open a {
+	color: #e89e44;
+}
+.autocompleter-queried {
+	color: #1078b9 !important;
+}
+#gkPageContent .menu li:hover {
+	background: #1078b9;
+}
+#gkPageContent .level0 li:hover {
+	background: #1078b9;
+}
+
+/* gk_stuff.css */
+.nspArt h4.nspHeader a:active,
+.nspArt h4.nspHeader a:focus,
+.nspArt h4.nspHeader a:hover {
+	color: #1078b9;
+}
+.nspLinks ul li h4 a:active,
+.nspLinks ul li h4 a:focus,
+.nspLinks ul li h4 a:hover {
+	color: #1078b9;
+}
+.color .readon:active,
+.color .readon:focus,
+.color .readon:hover {
+	color: #faebd8;
+}
+.color .nspArt p.nspText {
+	color: #faebd8;
+}
+.color .nspArt p.nspInfo {
+	color: #faebd8;
+}
+.color .nspArt p.nspInfo a:active,
+.color .nspArt p.nspInfo a:focus,
+.color .nspArt p.nspInfo a:hover {
+	color: #faebd8;
+}
+.color .nspLinks ul li h4 a:active,
+.color .nspLinks ul li h4 a:focus,
+.color .nspLinks ul li h4 a:hover {
+	color: #faebd8;
+}
+.color .nspArt.nspCol1  {
+	border-top: 1px solid #fabf66;
+}
+.color .nspArt h4.nspHeader a:active,
+.color .nspArt h4.nspHeader a:focus,
+.color .nspArt h4.nspHeader a:hover {
+	color: #faebd8;
+}
+.color .nspPagination li {
+	background: #fabf66;
+}
+.color .nspLinks li {
+	border-top: 1px solid #fabf66!important;
+}
+.bigdate .nspArt p.nspInfo {
+	color: #e89e44;
+}
+.nspMainPortalMode6 .nspSpeakerBig {
+	background-image: url('../images/style1/speaker_big_bg.png');
+}
+.nspMainPortalMode6 .nspSpeakerSmall {
+	background-image: url('../images/style1/speaker_small_bg.png');
+}
+.nspMainPortalMode6 .nspSpeakerBig .nspHeader {
+	background: #e89e44;
+}
+.gk-animation .gk-ticket strong {
+	background: #1077b8;
+}
+.gk-animation .gk-ticket:hover strong {
+	background: #e89e44;
+}
+.gk-jscounter {
+	color: #e89e44;
+}
+.gk-jscounter > div > strong {
+	color: #e89e44;
+}
+.gk-jscounter > div > small {
+	color: #e89e44;
+}
+.gk-jscounter > h3 {
+	color: #e89e44;
+}
+.gk-sponsors-wrap > a,
+.gk-sponsors > div > a {
+	background: #ea8d47;
+}
+.gk-sponsors-wrap > a:hover,
+.gk-sponsors > div > a:hover {
+	background: #fcaf69;
+}
+
+/* menu.css */
+.gkMenu > ul > li > div.childcontent {
+	background-image: url('../images/style1/menu_level1.png');
+}
+.gkMenu > ul > li > div.childcontent div.childcontent {
+	background-image: url('../images/style1/menu_level2.png');
+}
+.gkMenu > ul > li > div.childcontent div.childcontent div.childcontent {
+	background-image: url('../images/style1/menu_level3.png');
+}
+.gkMenu > ul div.childcontent-inner {
+	background: #0f78b9;
+}
+.gkMenu > ul div.childcontent-inner div.childcontent-inner {
+	background: #1a88cd;
+}
+.gkMenu > ul div.childcontent-inner div.childcontent-inner div.childcontent-inner {
+	background: #2b9ce3;
+}
+.gkMenu > ul div.childcontent header a {
+	border-bottom-color: #1a88cd;
+}
+
+/* k2.css */
+h1 > sup {
+	color: #1078b9;
+}
+span#formLog {
+	background: #1078b9;
+}
+.itemTags li a,
+.k2TagCloudBlock a, 
+.moduleItemTags a {
+	background-image: url('../images/style1/tags.png');
+}
+.k2TagCloudBlock a:hover {
+	background: #1078b9;
+}
+.itemAuthorBlock > div.k2AuthorAvatar > span {
+	background-image: url('../images/style1/avatar_bg.png');
+}
+.itemAuthorBlock > div h3 {
+	background: #e89e44;
+}
+.commentLink,
+.itemPrevious,
+.itemNext {
+	color: #e89e44
+}
+#itemListLinks li {
+	background-image: url('../images/style1/typography/bullet-square2.png');
+}
+.k2Avatar,
+.k2Avatar img {
+	background-image: url('../images/style1/avatar_bg.png');
+}
+span.lcCommentDate,
+.itemComments .itemCommentsList li div div div {
+	color: #e89e44;
+}
+table.calendar {
+	background: #1078b9;
+}
+table.calendar tr td {
+	border-color: #4794dc;
+}
+table.calendar tr td.calendarDateEmpty {
+	background: #3f8dd4;
+}
+table.calendar tr td.calendarDateLinked a:hover {
+	background: #3f8dd4;
+}
+table.calendar tr td.calendarToday {
+	background: #E89E44;
+	border-color: #E89E44;
+}
+table.calendar tr td.calendarTodayLinked {
+	background: #e89e44;
+}
+.k2TagCloudBlock a {
+	background: #e89e44;
+}
+.k2TagCloudBlock a:hover {
+	background: #1078b9 !important;
+}
+.gkK2EventPages .itemImage {
+	background-image: url('../images/style1/avatar_bg.png');
+}
+.gkK2EventPages .itemView:hover h2 a {
+	background: #e89e44;
+}
+ul.itemDetails li a, .userView .itemAuthorBlock a { 
+	color: #E89E44;  
+}
+.sponsor .gk-sponsors-wrap > a:hover {
+	background: #1078B9
+}
+.itemRatingList,
+.itemRatingList a:hover,
+.itemRatingList .itemCurrentRating {
+	background-image: url('../images/style1/star.png');
+}

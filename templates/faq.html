@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="container">
+	        <div class="hero-unit">
+	         <h2> ILC-2013 F.A.Q </h2>
+	            <hr>
+	         {% for faq in faq %}
+	            <h4>{{ faq.id }}. {{ faq.pertanyaan }} ?</h4>
+	        	<p style="padding-left: 24px;">{{ faq.jawaban|safe }}</p><br>
+				
+	        {% endfor %}
+	        </div>
+{% endblock %}

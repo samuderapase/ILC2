@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="container">
+	        <div class="hero-unit">
+	         <h2> Dukungan Komunitas  </h2>
+	            <hr>
+	            {% for komunitas in komunitas %}
+	            <h3> {{ komunitas.id }}. {{ komunitas.komunitas }}</h3>
+	            <div class="btn-mini">
+	            	{{ komunitas.tentang|safe }} 
+	            </div>	
+            	{% endfor %}
+	        </div>
+	       
+{% endblock %}

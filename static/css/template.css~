@@ -1,0 +1,817 @@
+/*
+#------------------------------------------------------------------------
+# Fest - September Joomla! template (for Joomla 2.5)
+#
+# Copyright (C) 2007-2012 Gavick.com. All Rights Reserved.
+# License:  Copyrighted Commercial Software
+# Website:  http://www.gavick.com
+# Support:  support@gavick.com
+ */
+
+/* Basic elements */
+body {
+	min-height: 100%;
+	background: #000 url('../images/bg.jpg') no-repeat center top;
+	font-size: 14px;
+	line-height: 2;
+	color: #;
+	padding: 0 10px!important;
+	font-weight: 400;
+	word-wrap: break-word;
+}
+ @media (max-width: 1920px) {
+body {
+	background-image: url('/static/img/bg2.jpg')!important;
+}
+
+}
+body a {
+	-webkit-transform: translateZ(0);
+}
+a {
+	color: #1078b9;
+	-webkit-transition: background-color 0.2s linear, color 0.2s linear;
+	-moz-transition: background-color 0.2s linear, color 0.2s linear;
+	-o-transition: background-color 0.2s linear, color 0.2s linear;
+	transition: background-color 0.2s linear, color 0.2s linear;
+	text-decoration: none;
+}
+a:hover,
+a:active,
+a:focus {
+	color: #2f3336;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin: 0;
+	padding: 0;
+	color: #2F3336;
+	font-weight: 400;
+}
+h1 {
+	font-size: 56px;
+	font-weight: 600;
+}
+h2,
+.componentheading {
+	font-size: 36px;
+	font-weight: 600;
+}
+h3 {
+	font-size: 24px;
+}
+h4 {
+	font-size: 125%;
+}
+h5 {
+	font-size: 110%;
+}
+ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+ul li {
+	line-height: 2.0;
+}
+p {
+	margin: 0.5em 0 1.5em;
+}
+/* Containers */
+#gkPageTop {
+	background: #000;
+	background: rgba(0, 0, 0, 0.3);
+	margin: 0 -10px;
+}
+#gkPageTop > div {
+	margin: 0 auto!important;
+}
+#gkSocial {
+	float: right;
+}
+#gkSocial p {
+	margin: 0!important;
+}
+#gkSocial a {
+	background: transparent url('../images/social_icons.png') no-repeat 0 0;
+	display: block;
+	filter: alpha(opacity=40);
+	float: left;
+	height: 27px;
+	margin: 12px 0 0 0;
+	opacity: 0.4;
+	text-indent: -9999px;
+	-webkit-transition: opacity .3s ease-out;
+	-moz-transition: opacity .3s ease-out;
+	-o-transition: opacity .3s ease-out;
+	transition: opacity .3s ease-out;
+	width: 27px;
+}
+#gkSocial a:hover {
+	filter: alpha(opacity=100);
+	opacity: 1.0;
+}
+#gkSocial .gkTwitter {
+	background-position: -27px 0;
+}
+#gkSocial .gkGplus {
+	background-position: -54px 0;
+}
+#gkSocial .gkRss {
+	background-position: -81px 0;
+}
+#gkPage {
+	background: transparent url('../images/grunge_wall.png');
+	color: #555;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	box-sizing: border-box;
+	margin: 0 -10px 0 -10px!important;
+	padding: 14px 0 24px;
+}
+#gkPage.gkSpeakersExist {
+	border-top: 7px solid #e89e44;
+	margin-top: 320px!important;
+}
+#gkPage.gkSpeakersExist #gkSpeakers {
+	margin-top: -266px;
+}
+#gkPage > div {
+	margin: 0 auto;
+}
+#gkSidebar,
+#gkMainbody {
+	margin-top: 28px!important;
+}
+/* Logo  */
+#gkHeaderTop {
+	margin: 58px 0 42px;
+}
+#gkHeaderTop > div,
+#gkHeaderBottom > div {
+	margin: 0 auto;
+}
+#gkLogo {
+	margin: 0 0 10px;
+	padding: 0;
+	text-indent: -999em;
+	text-shadow: none;
+	width: 210px;
+	display: block;
+	float: left;
+}
+#gkLogo img {
+	display: block;
+	margin: 0;
+}
+#gkLogo.cssLogo {
+	background: transparent url('../images/style1/logo.png') no-repeat 0 0;
+	/* You can specify there logo size and background */
+	height: 88px;
+	width: 392px;
+}
+#gkLogo.text {
+	color: #333;
+	font-size: 36px;
+	min-height: 48px;
+	padding: 0;
+	text-indent: 0;
+}
+#gkLogo.text > span {
+	color: #eee;
+	display: block;
+	font-size: 60px;
+	font-weight: 900;
+	line-height: 60px;
+	text-transform: uppercase;
+}
+#gkLogo.text .gkLogoSlogan {
+	color: #ddd;
+	display: block;
+	font-size: 16px;
+	font-weight: 600;
+	line-height: 16px;
+}
+/* top - register */
+#gkRegister {
+	float: right;
+	margin: 34px 0 0 0;
+}
+#gkRegister a {
+	background: #4b4b4b;
+	background: rgba(75, 75, 75, 0.52);
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	color: #fff;
+	font-size: 24px;
+	font-weight: 800;
+	line-height: 24px;
+	padding: 8px 22px;
+	text-transform: uppercase;
+	-webkit-transition: background .3s ease-out;
+	-moz-transition: background .3s ease-out;
+	-o-transition: background .3s ease-out;
+	transition: background .3s ease-out;
+}
+#gkRegister a:hover {
+	background: #e89e44;
+}
+/* Header modules */
+#gkHeaderTopModule {
+	clear: both;
+}
+/* Top modules */
+#gkTop1,
+#gkTop2,
+#gkBottom1,
+#gkBottom2,
+#gkBottom3 {
+	clear: both;
+	margin-top: 28px!important;
+}
+#gkTopBanner .search {
+	margin: 18px 0 0 0!important;
+}
+/* standard breadcrumb */
+#gkBreadcrumb {
+	background: rgba(255, 255, 255, 0.4);
+	border-bottom: 1px solid #e1e1e1;
+	margin: -14px 0 14px !important;
+	padding: 10px 18px;
+}
+#gkBreadcrumb > div {
+	margin: 0 auto;
+}
+#gkBreadcrumb .breadcrumbs {
+	float: left;
+	color: #999
+}
+#gkBreadcrumb .breadcrumbs li.separator {
+	width: 10px;
+	text-align: center;
+	padding: 0 4px!important;
+	color: #ccc;
+}
+#gkBreadcrumb .breadcrumbs li.pathway {
+	padding-right: 20px;
+}
+#gkBreadcrumb .breadcrumbs > ul > li {
+	color: #2f3336;
+	float: left;
+	font-size: 13px;
+	font-weight: 600
+}
+#gkBreadcrumb .breadcrumbs a {
+	color: #888;
+	font-weight: 400
+}
+#gkBreadcrumb .breadcrumbs a:hover {
+	color: #2f3336
+}
+#gkTools {
+	float: right;
+	margin: 4px 0 0 10px;
+}
+#gkTools a {
+	display: block;
+	float: left;
+	width: 22px;
+	height: 16px;
+	margin: 0 0 0 0px !important;
+	text-indent: -99999em;
+	background: url('../images/font_size.png') no-repeat -38px 50%;
+}
+a#gkToolsReset {
+	background-position: -15px 50%;
+	margin-left: 6px;
+}
+a#gkToolsDec {
+	background-position: 6px 50%;
+}
+/* top & bottom modules */
+#gkTop1 {
+	margin: 0;
+	padding: 0;
+}
+#gkBottom1,
+#gkBottom2,
+#gkBottom3 {
+	padding-bottom: 30px;
+}
+#gkBottom1,
+#gkBottom2,
+#gkBottom3 {
+	margin: 0 auto;
+}
+#gkTop1 > div,
+#gkTop2 > div,
+#gkBottom1 > div,
+#gkBottom2 > div,
+#gkBottom3 > div {
+	margin: 0 -10px;
+}
+/* Bottom I modules */
+#gkBottom1 {
+	border-top: 4px solid #eee;
+	margin-top: 28px;
+	padding: 35px 0 0 0;
+}
+#gkBottom1 .header {
+	background: transparent!important;
+	font-size: 20px;
+	line-height: 24px;
+	min-height: 24px;
+}
+#gkBottom1 a {
+	color: #2f3336;
+}
+#gkBottom1 a:active,
+#gkBottom1 a:focus,
+#gkBottom1 a:hover {
+	color: #1078b9;
+}
+/* Header bottom */
+#gkHeaderBottom {
+	background: #e87b2d;
+	margin: 0 -10px;
+	padding: 60px 0;
+}
+/* Bottom II modules */
+#gkBottomWrap {
+	background: #000 url('../images/bg.jpg') no-repeat center -180px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	box-sizing: border-box;
+	margin: 0 -10px;
+	padding: 24px 0 0;
+	overflow: hidden;
+}
+/* Bottom III modules */
+#gkBottom2,
+#gkBottom3 {
+	color: #d6d6d6;
+	font-size: 12px;
+}
+#gkBottom2 a,
+#gkBottom3 a {
+	color: #999;
+}
+#gkBottom2 a:active,
+#gkBottom2 a:focus,
+#gkBottom2 a:hover,
+#gkBottom3 a:active,
+#gkBottom3 a:focus,
+#gkBottom3 a:hover {
+	color: #fff;
+}
+#gkBottom2 .header,
+#gkBottom2 .header a,
+#gkBottom3 .header,
+#gkBottom3 .header a {
+	background: transparent;
+	color: #d5d5d5;
+	font-size: 20px;
+	font-weight: normal!important;
+	line-height: 24px;
+	min-height: 24px;
+}
+#gkBottom2 .header a:hover,
+#gkBottom3 .header a:hover {
+	color: #fff;
+}
+/* footer */
+#gkFooter > div {
+	background: transparent url('../images/separator_bg.png') repeat-x 0 0;
+	color: #777;
+	font-size: 12px;
+	line-height: 51px;
+	margin: 0 auto;
+	min-height: 10px;
+	padding: 10px 0 0 0;
+}
+#gkFooter a {
+	color: #bbb;
+}
+#gkFooter a:active,
+#gkFooter a:focus,
+#gkFooter a:hover {
+	color: #fff;
+}
+.gkCopyrights {
+	float: right;
+	margin: 0;
+}
+/* other footer elements */
+#gkStyleArea {
+	display: block;
+	float: right;
+	line-height: 7px;
+	margin: 12px 0 0 12px;
+	text-align: center;
+	-webkit-transform-style: preserve-3d;
+	-moz-transform-style: preserve-3d;
+	-ms-transform-style: preserve-3d;
+	-o-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+}
+#sjy_t {position: absolute; top: 0px; left: -5432px;}
+#gkStyleArea a {
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	border-radius: 50%;
+	display: inline-block;
+	height: 7px;
+	text-indent: -9999px;
+	-webkit-transform: scale(1.0);
+	-moz-transform: scale(1.0);
+	-ms-transform: scale(1.0);
+	-o-transform: scale(1.0);
+	transform: scale(1.0);
+	-webkit-transform-style: preserve-3d;
+	-moz-transform-style: preserve-3d;
+	-ms-transform-style: preserve-3d;
+	-o-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+	-webkit-transition: -webkit-transform 0.2s ease-out;
+	-moz-transition: -moz-transform 0.2s ease-out;
+	-o-transition: -o-transform 0.2s ease-out;
+	transition: transform 0.2s ease-out;
+	width: 7px;
+}
+#gkStyleArea a:hover {
+	-webkit-transform: scale(1.5);
+	-moz-transform: scale(1.5);
+	-ms-transform: scale(1.5);
+	-o-transform: scale(1.5);
+	transform: scale(1.5);
+}
+#gkStyleArea a {
+	margin: 9px 0 9px 3px;
+}
+#gkColor1 {
+	background: #1078b9;
+}
+#gkColor2 {
+	background: #fb581e;
+}
+#gkColor3 {
+	background: #a2b269;
+}
+#gkFrameworkLogo {
+	clear: both;
+	display: block;
+	width: 90px;
+	height: 36px;
+	float: none;
+	background: url('../images/gavern-logo.png') no-repeat 0 0;
+	text-indent: -9999em;
+	margin: 20px auto 80px auto;
+}
+#gkFooterNav {
+	float: left;
+}
+#gkFooterNav ul li {
+	float: left;
+	line-height: 50px;
+	margin-right: 12px;
+}
+#gkFooterNav ul li a {
+	color: #777;
+}
+#gkFooterNav ul li a:active,
+#gkFooterNav ul li a:focus,
+#gkFooterNav ul li a:hover {
+	color: #fff;
+}
+/* Suffixes */
+.box {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	box-sizing: border-box;
+	margin-top: 48px;
+	overflow: hidden;
+	width: 100%;
+}
+.box > div {
+	overflow: hidden;
+}
+div.content {
+	clear: both;
+}
+.box li a {
+	text-decoration: none;
+}
+.box a {
+	text-decoration: none;
+}
+#gkContent .box:first-child {
+	padding-top: 0 !important;
+}
+/* suffix banner */
+.box.banner p {
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
+/* default suffix */
+.box .header {
+	color: #2F3336;
+	font-size: 36px;
+	font-weight: 600;
+	line-height: 36px;
+	margin-bottom: 20px;
+	min-height: 36px;
+	text-transform: uppercase;
+}
+/* small suffix */
+.box.small .header {
+	font-size: 20px;
+	line-height: 24px;
+	min-height: 24px;
+}
+/* clear suffix */
+.box.clear {
+	margin: 0;
+}
+.box.clear > div {
+	margin: 0;
+	padding: 0;
+}
+.clear div.content {
+	clear: both;
+}
+/* nomargin suffix */
+.box.nomargin {
+	margin: 0!important;
+}
+/* nooverflow suffix */
+.box.nooverflow,
+.box.nooverflow > div {
+	overflow: visible!important;
+}
+/* advertisement suffix */
+.box.advertisement .header {
+	background: transparent;
+	border-bottom: 1px solid #ccc;
+	color: #888!important;
+	font-size: 10px!important;
+	font-weight: 300;
+	margin: 0 0 10px 0;
+	min-height: 16px;
+	text-align: right;
+	text-transform: uppercase;
+	line-height: 16px;
+}
+.box.advertisement .header span {
+	background: transparent;
+	float: right;
+	line-height: 16px;
+	padding: 0;
+}
+/* suffix _text */
+.box_text > div {
+	background: #fff;
+}
+/* suffix dark */
+.box.dark > div {
+	background: #000!important;
+	color: #999;
+	padding: 20px;
+}
+.box.dark .header {
+	background: transparent!important;
+}
+.box.dark h1,
+.box.dark h2,
+.box.dark h3,
+.box.dark h4,
+.box.dark h5,
+.box.dark h6 {
+	color: #fff;
+}
+.box.dark ul {
+	margin: 0;
+	padding: 0;
+}
+.box.dark ul li {
+	border-top: 1px solid #444;
+	position: relative;
+	padding: 4px 0;
+}
+.box.dark ul li:first-child {
+	border-top: none;
+}
+.box.dark a {
+	color: #fff;
+}
+.box.dark a:active,
+.box.dark a:focus,
+.box.dark a:hover {
+	color: #e89e44;
+}
+.box.dark .menu a:active,
+.box.dark .menu a:focus,
+.box.dark .menu a:hover {
+	color: #fff;
+}
+.box.dark ul ul {
+	margin: 0 0 0 20px;
+}
+.box.dark b,
+.box.dark strong {
+	color: #aaa;
+	font-weight: bold;
+}
+/* suffix color */
+.box.color > div {
+	background: #e89e44!important;
+	color: #faebd8;
+	padding: 20px;
+}
+.box.color .header {
+	background: transparent!important;
+}
+.box.color h1,
+.box.color h2,
+.box.color h3,
+.box.color h4,
+.box.color h5,
+.box.color h6 {
+	color: #fff;
+}
+.box.color ul {
+	margin: 0;
+	padding: 0;
+}
+.box.color ul li {
+	border-top: 1px solid #fabf66;
+	position: relative;
+	padding: 4px 0;
+}
+.box.color ul li:first-child {
+	border-top: none;
+}
+.box.color a {
+	color: #fff;
+}
+.box.color a:active,
+.box.color a:focus,
+.box.color a:hover {
+	color: #faebd8;
+}
+.box.color ul ul {
+	margin: 0 0 0 20px;
+}
+.box.color b,
+.box.color strong {
+	color: #fff;
+	font-weight: bold;
+}
+/* mainbody restrictions */
+section#gkBreadcrumb + section#gkMainbody {
+	margin-top: 0!important;
+}
+#gkMainbody .box,
+#gkMainbodyTop .box,
+#gkMainbodyBottom .box {
+	margin-top: 14px;
+}
+#gkMainbody .box:first-child,
+#gkMainbodyTop .box:first-child #gkMainbodyBottom .box:first-child {
+	margin-top: 0;
+}
+/* tablet/mobile suffixes */
+.notablet {
+	display: none;
+}
+.nomobile {
+	display: none;
+}
+.onlytablet {
+	display: none;
+}
+.onlymobile {
+	display: none;
+}
+/* Login form */
+#gkFBLogin {
+	float: left;
+	width: 45%;
+}
+#gkFBLogin p {
+	line-height: 18px;
+	margin: 14px 0 20px;
+}
+#gkFBLogin + #login-form,
+#gkFBLogin + #com-login-form {
+	float: left;
+	width: 45%;
+	margin-left: 4%;
+	padding-left: 30px;
+	border-left: 1px solid #e7e7e7;
+}
+#form-login-remember {
+	margin: 10px 0;
+}
+#form-login-remember label {
+	color: #777;
+	font-size: 11px;
+	font-weight: normal;
+	line-height: 27px;
+}
+#login-form fieldset {
+	margin: 0 0 20px;
+}
+#login-form fieldset p {
+	margin: 0.5em 0;
+}
+#login-form ul {
+	border-top: 1px solid #E7E7E7;
+	overflow: hidden;
+	padding: 12px 0 0;
+}
+#login-form ul li {
+	font-size: 11px;
+	line-height: 1.6;
+}
+#login-form ul li a {
+	color: #999;
+}
+#login-form ul li a:hover {
+	color: #222;
+}
+#login-form input[type="text"],
+#login-form input[type="password"] {
+	width: 85%;
+}
+label#jform_spacer-lbl {
+	font-size: 11px;
+	font-weight: normal;
+	color: #666;
+}
+.logout-button .login-greeting {
+	float: left;
+	margin-right: 32px;
+	font-size: 14px;
+}
+.gkUsermenu {
+	border-top: 1px solid #eee;
+	clear: both;
+	padding-top: 10px;
+	position: relative;
+	top: 10px;
+}
+.gkUsermenu li {
+	font-size: 12px;
+	padding-left: 16px;
+}
+/* Login with Facebook button */
+span#fb-auth small {
+	width: 20px;
+	background: transparent url('../images/fbauth.png') no-repeat 0 2px;
+	text-indent: -999em;
+	display: block;
+	float: left;
+	border-right: 1px solid #a0aecd;
+	margin: 2px 12px 0 0;
+	height: 17px;
+}
+span#fb-auth {
+	border: 5px solid #fff;
+	background-color: #1078B9;
+	display: inline-block;
+	color: #fff;
+	font-family: arial;
+	line-height: 22px;
+	float: left;
+	font-size: 18px;
+	font-weight: 600;
+	margin: 12px 0 6px;
+	padding: 9px 12px;
+	cursor: pointer;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	-webkit-transition: background-color 0.2s ease-out;
+	-moz-transition: background-color 0.2s ease-out;
+	-o-transition: background-color 0.2s ease-out;
+	transition: background-color 0.2s ease-out;
+	position: relative;
+	text-transform: uppercase;
+	top: -3px;
+}
+span#fb-auth:hover {
+	background-color: #e89e44;
+}
+span#fb-auth:hover small { border-color: #f5b76d}
